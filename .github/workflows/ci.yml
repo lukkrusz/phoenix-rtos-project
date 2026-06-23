@@ -2,14 +2,7 @@
 name: ci
 
 on:
-  push:
-    branches:
-      - master
-      - 'feature/*'
-  pull_request:
-    branches:
-      - master
-      - 'feature/*'
+  workflow_dispatch:
 
 jobs:
   call-ci:
