@@ -138,8 +138,8 @@ jobs:
       - name: Merge Test Results
         run: |
           pip3 install junitparser junit2html
-          # Find all XML files and pass them to junitparser safely
-          find artifacts -name "*.xml" -exec junitparser merge {} junit.xml \+
+          XML_FILES=$(find artifacts -name "*.xml")
+          junitparser merge $XML_FILES junit.xml
           junit2html junit.xml junit.html
         env:
           PIP_BREAK_SYSTEM_PACKAGES: 1  # NOTE: we're running on emphemeral GH VMs, install packages globally
