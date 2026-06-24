@@ -1,0 +1,14 @@
+.github/workflows/ci-project.yml
+  h_9f2d068a164dcf 141-142
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.4.2",
+  "base_commit_sha": "a3e538af5178f48bc1a12cde09e96db7f8d46064",
+  "prompts": {},
+  "humans": {
+    "h_9f2d068a164dcf": {
+      "author": "lukkrusz <lukasz.kruszynski@phoenix-rtos.com>"
+    }
+  }
+}
